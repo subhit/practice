@@ -6,7 +6,8 @@
 		
 		<link rel="stylesheet" href="css/todo.css">
 	</head>
-	<body ng-app="todoApp">
+	<body ng-app="todoApp" ng-init="customers = [{name:Jesse, city:Melbourne}, 
+	{name:John, city:Sydney}, {name:Joseph, city:Perth}]">
 		<h2>ToDo</h2>	
 		<div ng-controller="TodoListController as todoList">
 			<span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
